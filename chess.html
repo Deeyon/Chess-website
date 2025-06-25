@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chessboard Square</title>
+    <link rel="stylesheet" href="./chess.css">
+</head>
+    <body>
+
+    <h2>Chessboard</h2>
+    <p>Click on a piece to see its movement options.</p>
+    <p>Click on orange squares to move the piece.</p>
+    <p>Capture the opponent's king to win. Illegal moves allowed.</p>
+
+    <div class="row">
+        <div class="blackSq" id="1" onclick="move(this.id)">
+            <img src="images/blackRook.png" class="blackRook" onclick="rookMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="2" onclick="move(this.id)">
+            <img src="images/blackKnight.png" class="blackKnight" onclick="knightMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="3" onclick="move(this.id)">
+            <img src="images/blackBishop.png" class="blackBishop" onclick="bishopMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="4" onclick="move(this.id)">
+            <img src="images/blackKing.png" class="blackKing" onclick="kingMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="5" onclick="move(this.id)">
+            <img src="images/blackQueen.png" class="blackQueen" onclick="queenMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="6" onclick="move(this.id)">
+            <img src="images/blackBishop.png" class="blackBishop" onclick="bishopMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="7" onclick="move(this.id)">
+            <img src="images/blackKnight.png" class="blackRook" onclick="knightMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="8" onclick="move(this.id)">
+            <img src="images/blackRook.png" class="blackRook" onclick="rookMovementHighlight(this.parentElement.id)"></img>
+        </div>
+
+        <div class="whiteSq" id="9" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="10" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="11" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="12" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="13" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="14" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="15" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="16" onclick="move(this.id)">
+            <img src="images/blackPawn.png" class="blackPawn" onclick="blackPawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+
+        <div class="blackSq" id="17" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="18" onclick="move(this.id)"></div>
+        <div class="blackSq" id="19" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="20" onclick="move(this.id)"></div>
+        <div class="blackSq" id="21" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="22" onclick="move(this.id)"></div>
+        <div class="blackSq" id="23" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="24" onclick="move(this.id)"></div>
+
+        <div class="whiteSq" id="25" onclick="move(this.id)"></div>
+        <div class="blackSq" id="26" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="27" onclick="move(this.id)"></div>
+        <div class="blackSq" id="28" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="29" onclick="move(this.id)"></div>
+        <div class="blackSq" id="30" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="31" onclick="move(this.id)"></div>
+        <div class="blackSq" id="32" onclick="move(this.id)"></div>
+
+        <div class="blackSq" id="33" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="34" onclick="move(this.id)"></div>
+        <div class="blackSq" id="35" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="36" onclick="move(this.id)"></div>
+        <div class="blackSq" id="37" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="38" onclick="move(this.id)"></div>
+        <div class="blackSq" id="39" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="40" onclick="move(this.id)"></div>
+
+        <div class="whiteSq" id="41" onclick="move(this.id)"></div>
+        <div class="blackSq" id="42" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="43" onclick="move(this.id)"></div>
+        <div class="blackSq" id="44" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="45" onclick="move(this.id)"></div>
+        <div class="blackSq" id="46" onclick="move(this.id)"></div>
+        <div class="whiteSq" id="47" onclick="move(this.id)"></div>
+        <div class="blackSq" id="48" onclick="move(this.id)"></div>
+
+        <div class="blackSq" id="49" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>    
+        </div>
+        <div class="whiteSq" id="50" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="51" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="52" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="53" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="54" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="55" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="56" onclick="move(this.id)">
+            <img src=images/whitePawn.png class="whitePawn"  onclick="pawnMovementHighlight(this.parentElement.id)"></img>
+        </div>
+
+        <div class="whiteSq" id="57" onclick="move(this.id)">
+            <img src="images/whiteRook.png" class="whiteRook" onclick="rookMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="58" onclick="move(this.id)">
+            <img src="images/whiteKnight.png" class="whiteKnight" onclick="knightMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="59" onclick="move(this.id)">
+            <img src="images/whiteBishop.png" class="whiteBishop" onclick="bishopMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="60" onclick="move(this.id)">
+            <img src="images/whiteKing.png" class="whiteKing" onclick="kingMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="61" onclick="move(this.id)">
+            <img src="images/whiteQueen.png" class="whiteQueen" onclick="queenMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="62" onclick="move(this.id)">
+            <img src="images/whiteBishop.png" class="whiteBishop" onclick="bishopMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="whiteSq" id="63" onclick="move(this.id)">
+            <img src="images/whiteKnight.png" class="whiteKnight" onclick="knightMovementHighlight(this.parentElement.id)"></img>
+        </div>
+        <div class="blackSq" id="64" onclick="move(this.id)">
+            <img src="images/whiteRook.png" class="whiteRook" onclick="rookMovementHighlight(this.parentElement.id)"></img>
+        </div>
+
+    </div>
+
+    <script src="./chess.js"></script>
+
+    <button type="button" onclick="changeColor()" >Change color!</button>
+
+
+
+</body>
+</html>
+
+<!-- Credits for images of chess pieces:  -->
+
+<!-- White Pawn:By en:User:Cburnett - File:Chess plt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363783 -->
+
+<!-- Black Pawn:By en:User:Cburnett - File:Chess pdt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363782 -->
+
+<!-- White Knight:By en:User:Cburnett - File:Chess nlt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363781 -->
+
+<!-- Black Knight:By en:User:Cburnett - File:Chess ndt45.svg, CC BY-SA 3.0 License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363780 -->
+
+<!-- White Bishop:By en:User:Cburnett - File:Chess blt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363777 -->
+
+<!-- Black Bishop:By en:User:Cburnett - File:Chess bdt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363776 -->
+
+<!-- White Rook: By en:User:Cburnett - File:Chess rlt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363775 -->
+
+<!-- Black Rook: By en:User:Cburnett - File:Chess rdt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363786 -->
+
+<!-- White Queen:By en:User:Cburnett - File:Chess qlt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363785 -->
+
+<!-- Black Queen:By en:User:Cburnett - File:Chess qdt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363784 -->
+
+<!-- White King:By en:User:Cburnett - File:Chess klt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363779 -->
+
+<!-- Black King:By en:User:Cburnett - File:Chess kdt45.svg, CC BY-SA 3.0, License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+Link: https://commons.wikimedia.org/w/index.php?curid=20363778 -->
